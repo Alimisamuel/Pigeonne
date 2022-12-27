@@ -172,8 +172,8 @@ const LandingPage = () => {
             </Grid>
           </div>
         </div>
-        <Box sx={{ height: "3px", bgcolor: "#d6e6df" }}></Box>
-        <Box sx={{ height: "5px", bgcolor: "#5aab85" }}></Box>
+        <Box sx={{ height: "3px", bgcolor: "#f0f0f0" }}></Box>
+        <Box sx={{ height: "5px", bgcolor: "#4aefa0" }}></Box>
         <Box sx={{ height: "7px", bgcolor: "#037440" }}></Box>
 
         {/* .................About............ */}
@@ -185,7 +185,12 @@ const LandingPage = () => {
                   className="home_h1"
                   variant="h1"
                   sx={{
-                    fontSize: "40px",
+                    fontSize:{
+                      lg:'40px',
+                      md:'40px',
+                      sm:'35px',
+                      xs:'30px'
+                    },
                     textAlign:{
                       lg:'right',
                       md:'right',
@@ -203,7 +208,12 @@ const LandingPage = () => {
                 <Typography
                   variant="p"
                   sx={{
-                    fontSize: "19px",
+                    fontSize:{
+                      lg:'19px',
+                      md:'19px',
+                      sm:'17px',
+                      xs:'15px'
+                    },
                     mb: 4,
                     fontFamily: "pangram",
 
@@ -221,7 +231,7 @@ const LandingPage = () => {
           <div className="about" style={{ marginTop: "60px" }}>
             <div className="container">
               <Grid container>
-                <Grid item lg={6} md={6} sm={6} xs={12} sx={{ height: "500px" , mb:{xs:5} }}>
+                <Grid item lg={6} md={6} sm={6} xs={12} sx={{ height:{ lg:'500px', md:'500px', sm:'500px', xs:'300px'},  mb:{xs:5} }}>
                   <Paper elevation={24} className="image_box"></Paper>
                 </Grid>
                 <Grid
