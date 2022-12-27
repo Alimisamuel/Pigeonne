@@ -139,6 +139,7 @@ align-items: center;
 @media (max-width:600px){
     .heroe{
         height: 600px;
+        background-position-x: -300px;
     }
     .home_h1::after{
 height: 5%;
@@ -171,6 +172,10 @@ height: 5%;
         background: url('../img/time.jpg');
         height: 300px;
         background-size: cover;
+    }
+    .hereo_caption{
+        font-size: 13px;
+        line-height: 15px !important;
     }
 
 }

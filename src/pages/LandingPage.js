@@ -149,14 +149,15 @@ const LandingPage = () => {
                 </Typography>
                 <Typography
                   variant="body"
+                  className="hereo_caption"
                   sx={{
                     fontFamily: "pangram",
                     color: "#f0f0f0",
                     fontSize:{
                       lg:'20px',
                       md:'20px',
-                      sm:'15px',
-                      sx:'10px'
+                      sm:'10px',
+                      sx:'7px'
                     } ,
                   }}
                 >
