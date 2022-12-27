@@ -9,6 +9,7 @@ import {
   ListItemText,
   Container,
   Button,
+  Divider,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../img/logo-black.png";
@@ -59,7 +60,12 @@ const Drawers = () => {
               </ListItemIcon>
             </ListItemButton>
           </Link>
-          
+          <Divider sx={{mt:5}}/>
+          <div style={{paddingLeft:'20px'}} >
+
+                <a href='tel:+12146999967' style={{color:'#000', fontFamily:'pangram', fontSize:'11px',  marginRight:'30px'}}>Contact: +1 (214) 669-9967</a>
+               <br/> <a href='mailto:business@pigeonne.app' style={{color:'#000', fontFamily:'pangram', fontSize:'11px',  marginRight:'30px'}}>Email: business@pigeonne.app</a>
+              </div>
        
           <Link
             to="/donate"
@@ -75,7 +81,7 @@ const Drawers = () => {
                   variant="outlined"
                   sx={{
                     mt:5,
-                     ml: 3.5,
+                     ml: 2,
                      mr:3.5,
                      px:4,
                      color:'#000',

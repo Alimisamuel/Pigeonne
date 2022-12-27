@@ -46,7 +46,7 @@ const NewNav = () => {
           ) : (
             <>
               <Tabs
-                sx={{ marginLeft: 'auto' }}
+                sx={{ marginLeft: 'auto', mr:3 }}
                 value={value}
                 onChange={(e, value) => setValue(value)}
              
@@ -61,8 +61,14 @@ const NewNav = () => {
                 >
               
                 </Link> */}
+
                
               </Tabs>
+              <div  >
+
+                <a href='tel:+12146999967' style={{color:'#000', fontFamily:'pangram', fontSize:'11px',  marginRight:'30px'}}>Contact: +1 (214) 669-9967</a>
+               <br/> <a href='mailto:business@pigeonne.app' style={{color:'#000', fontFamily:'pangram', fontSize:'11px',  marginRight:'30px'}}>Email: business@pigeonne.app</a>
+              </div>
               <Link
                 to="/donate"
                 style={{ textDecoration: 'none', color: 'black' }}
