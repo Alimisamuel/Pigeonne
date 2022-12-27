@@ -148,13 +148,18 @@ height: 5%;
         height: 300px;
     }
     .image_box{
-        height: 400px;
+        height: 300px;
     }
     .service{
         margin-top: 40px;
     }
+    .text{
+        font-size: 15px;
+        line-height: 30px;
+    }
     .service h4{
-        font-size: 35px !important;
+        font-size: 30px !important;
+        line-height: 40px;
     }
     .boost{
         background: url('../img/boost.jpg');

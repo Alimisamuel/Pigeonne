@@ -231,7 +231,7 @@ const LandingPage = () => {
           <div className="about" style={{ marginTop: "60px" }}>
             <div className="container">
               <Grid container>
-                <Grid item lg={6} md={6} sm={6} xs={12} sx={{ height:{ lg:'500px', md:'500px', sm:'500px', xs:'300px'},  mb:{xs:5} }}>
+                <Grid item lg={6} md={6} sm={6} xs={12} sx={{ height:{ lg:'500px', md:'500px', sm:'500px', xs:'200px'},  mb:{xs:5} }}>
                   <Paper elevation={24} className="image_box"></Paper>
                 </Grid>
                 <Grid
@@ -255,7 +255,12 @@ const LandingPage = () => {
                     variant="h4"
                     sx={{
                       color: "#037440",
-                      fontSize: "40px",
+                      fontSize: {
+                        lg:'40px',
+                        md:'40px',
+                        sm:'35px',
+                        xs:'30px'
+                      },
                       fontWeight: "bolder",
                       fontFamily: "pangram",
                     }}
@@ -323,7 +328,12 @@ const LandingPage = () => {
                     variant="h5"
                     sx={{
                       fontWeight: "bolder",
-                      fontSize: "30px",
+                      fontSize: {
+                        lg:'30px',
+                        md:'30px',
+                        sm:'27px',
+                        xs:'20px'
+                      },
                       fontFamily: "pangram",
                     }}
                   >
@@ -379,7 +389,12 @@ const LandingPage = () => {
                     variant="h5"
                     sx={{
                       fontWeight: "bolder",
-                      fontSize: "30px",
+                      fontSize: {
+                        lg:'30px',
+                        md:'30px',
+                        sm:'27px',
+                        xs:'20px'
+                      },
                       fontFamily: "pangram",
                     }}
                   >
@@ -410,7 +425,12 @@ const LandingPage = () => {
                     variant="h5"
                     sx={{
                       fontWeight: "bolder",
-                      fontSize: "30px",
+                      fontSize: {
+                        lg:'30px',
+                        md:'30px',
+                        sm:'27px',
+                        xs:'20px'
+                      },
                       fontFamily: "pangram",
                     }}
                   >
@@ -459,7 +479,12 @@ const LandingPage = () => {
                     variant="h5"
                     sx={{
                       fontWeight: "bolder",
-                      fontSize: "30px",
+                      fontSize: {
+                        lg:'30px',
+                        md:'30px',
+                        sm:'27px',
+                        xs:'20px'
+                      },
                       color: "#000",
                       fontFamily: "pangram",
                     }}
@@ -486,7 +511,12 @@ const LandingPage = () => {
               sx={{
                 fontFamily: "pangram",
                 fontWeight: "bolder",
-                fontSize: "40px",
+                fontSize: {
+                  lg:'40px',
+                  md:'40px',
+                  sm:'35px',
+                  xs:'20px'
+                },
                 color: "#000",
               }}
             >
@@ -509,7 +539,12 @@ const LandingPage = () => {
         <div className="footer">
           <Typography
             variant="body"
-            sx={{ color: "#f0f0f0", fontFamily: "pangram" }}
+            sx={{ color: "#f0f0f0", fontFamily: "pangram", fontSize:{
+              lg:'16px',
+              md:'16px',
+              sm:'16px',
+              xs:'13px'
+            } }}
           >
             All rights are reserved 2022 Pigeonne
           </Typography>
