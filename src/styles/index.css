@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'pangram';
+    src: url('../Pangram-Regular.otf');
+}
+
 body{
     background-color: #f0f0f0 !important;
-    font-family: pangram;
+    font-family: 'pangram' !important;
     margin: 0%;
     transition: .3s ease-in !important ;
 }
