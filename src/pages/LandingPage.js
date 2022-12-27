@@ -1,0 +1,512 @@
+import {
+ 
+  Button,
+
+  Grid,
+
+  Paper,
+  Typography,
+} from "@mui/material";
+import React from "react";
+import "../styles/index.css";
+// import logo from "../img/logo.png";
+// import logo2 from "../img/logo-black.png";
+import { Box } from "@mui/system";
+// import { Link } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+// import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
+// import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
+import NewNav from "../components/NewNav";
+// import { Container, width } from '@mui/system'
+
+const darkTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#037440",
+    },
+  },
+});
+
+const LandingPage = () => {
+  // const [color, setColor] = useState(false);
+
+  // const changeColor = () => {
+  //   if (window.scrollY >= 90) {
+  //     setColor(true);
+  //   } else {
+  //     setColor(false);
+  //   }
+  // };
+
+  // window.addEventListener("scroll", changeColor);
+
+
+
+
+
+
+  return (
+    <>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <NewNav/>
+        {/* <AppBar
+          className={color ? "appbar appbar-bg" : "appbar"}
+          sx={{ py: 1 }}
+        >
+          <div
+            className="container"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "70%",
+              }}
+            >
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <img
+                  src={color ? logo2 : logo}
+                  alt="pigeonne-logo"
+                  width={120}
+                />
+              </Box>
+
+              <Box>
+                <Tabs value={0}>
+                  <a href="#about">
+                    <Tab
+                      label="About"
+                      values={0}
+                      sx={{
+                        color: "#037440",
+                        fontSize: "18px",
+                        fontWeight: "bolder",
+                        fontFamily: "pangram",
+                      }}
+                    />
+                  </a>
+                </Tabs>
+              </Box>
+            </div>
+            <Box>
+              <ButtonGroup sx={{ mr: 5 }}>
+                <Button size="small">
+                  <ForwardToInboxIcon sx={{ fontSize: "" }} />
+                </Button>
+                <Button size="small">
+                  <PhoneEnabledIcon />
+                </Button>
+              </ButtonGroup>
+              <Button variant="outlined" size="small">
+                Login
+              </Button>
+            </Box>
+          </div>
+        </AppBar> */}
+        <div className="heroe">
+          <div className="container">
+            <Grid container>
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={6}
+                xs={6}
+                sx={{
+                  mt: 8,
+                }}
+              >
+                <Typography
+                  variant="h1"
+                  sx={{
+                    color: "#f0f0f0",
+                    fontFamily: "pangram",
+                    fontWeight: "bolder",
+                    fontSize:{
+                          lg:'80px',
+                          md:'80px',
+                          sm:'65px',
+                          xs:'40px'
+                    } ,
+                    lineHeight:{
+                      lg:'100px',
+                      md:'100px',
+                      sm:'75px'
+                    } ,
+                    mt: 10,
+                    mb:2
+                  }}
+                >
+                  Your <br />
+                  community favorite amenity is here
+                </Typography>
+                <Typography
+                  variant="body"
+                  sx={{
+                    fontFamily: "pangram",
+                    color: "#f0f0f0",
+                    fontSize:{
+                      lg:'20px',
+                      md:'20px',
+                      sm:'15px',
+                      sx:'10px'
+                    } ,
+                  }}
+                >
+                  Offer your residents scheduled package deliveries as an
+                  amenity. Zero cost to you
+                </Typography>
+                <br></br>
+                <button id="about" className="btn">
+                  Get Started
+                </button>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
+        <Box sx={{ height: "3px", bgcolor: "#d6e6df" }}></Box>
+        <Box sx={{ height: "5px", bgcolor: "#5aab85" }}></Box>
+        <Box sx={{ height: "7px", bgcolor: "#037440" }}></Box>
+
+        {/* .................About............ */}
+        <div className="who-we-are ">
+          <div className="container">
+            <Grid container spacing={1}>
+              <Grid item lg={6} md={6} sm={6} xs={12}>
+                <Typography
+                  className="home_h1"
+                  variant="h1"
+                  sx={{
+                    fontSize: "40px",
+                    textAlign:{
+                      lg:'right',
+                      md:'right',
+                      sm:'right',
+                      xs:'left'
+                    },
+                    fontFamily: "pangram",
+                    mr: 4,
+                  }}
+                >
+                  WHO WE ARE?
+                </Typography>
+              </Grid>
+              <Grid item lg={6} md={6} sm={6} xs={12}>
+                <Typography
+                  variant="p"
+                  sx={{
+                    fontSize: "19px",
+                    mb: 4,
+                    fontFamily: "pangram",
+
+                    lineHeight: "28px",
+                  }}
+                >
+                  Pigeonne is a last mile delivery service that guarantees safe
+                  and on time package deliveries to your residents.
+                </Typography>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
+        <section id="">
+          <div className="about" style={{ marginTop: "60px" }}>
+            <div className="container">
+              <Grid container>
+                <Grid item lg={6} md={6} sm={6} xs={12} sx={{ height: "500px" , mb:{xs:5} }}>
+                  <Paper elevation={24} className="image_box"></Paper>
+                </Grid>
+                <Grid
+                  item
+                  lg={6}
+                  md={6}
+                  sm={6}
+                  xs={12}
+                  sx={{
+                    pl: {
+                      lg:5,
+                    md:5,
+                  sm:5,
+                xs:0},
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      color: "#037440",
+                      fontSize: "40px",
+                      fontWeight: "bolder",
+                      fontFamily: "pangram",
+                    }}
+                  >
+                    WHAT WE DO
+                  </Typography>
+
+                  <Box>
+                    <p className="text">
+                      Whether it’s stolen or misplaced packages. Residents are
+                      losing valuable items daily due to the existing last mile
+                      delivery process.
+                    </p>
+                    {/* <p className="text">
+                      Pigeonne is a last mile delivery service that guarantees
+                      safe and on time package deliveries to your residents.
+                    </p> */}
+                    <p className="text">
+                      We protect their packages by receiving it at our secure
+                      facilities called nests, and we notify the resident via
+                      the app once it arrives. Once notified the residents can
+                      schedule their in person delivery for their preferred time
+                      on the app.
+                    </p>
+                  </Box>
+                </Grid>
+              </Grid>
+            </div>
+          </div>
+        </section>
+
+        {/* ...........Benefit ............. */}
+
+        <section className="service">
+          <div className="container" style={{ paddingTop: "30px" }}>
+            <h4
+              style={{
+                fontFamily: "pangram",
+                fontSize: "50px",
+                textAlign: "center",
+                color: "#000",
+              }}
+            >
+              Deliveries are a part of your residents daily life and with{" "}
+              <span style={{ color: "#4aefa0" }}>Pigeonne </span>you can:
+            </h4>
+            <Grid container >
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={6}
+                xs={12}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  mb:{
+                    xs:0
+                  }
+                }}
+              >
+                <Box sx={{ pr: 5 }}>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: "bolder",
+                      fontSize: "30px",
+                      fontFamily: "pangram",
+                    }}
+                  >
+                    Boost resident satisfaction
+                  </Typography>
+                  <div className="border"></div>
+                  <p className="text">
+                    Improve their wellbeing by offering them safe deliveries on
+                    their schedule.{" "}
+                  </p>
+                </Box>
+              </Grid>
+              <Grid item lg={6}md={6} sm={6} xs={12} sx={{  mb:{
+                    xs:7
+                  }}} className="boost">
+                {" "}
+              </Grid>
+
+              <Grid item lg={6} md={6} sm={6} xs={12} sx={{  mb:{
+                    xs:3
+                  }}}  className="revenue"></Grid>
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={6} 
+                sx={{
+                  display: "flex",
+                  justifyContent: "right",
+                  alignItems: "center",
+                  mb:{
+                    xs:3
+                  }
+                }}
+              >
+                <Box
+                  sx={{
+                    pl:{
+                      lg:7,
+                      md:7,
+                      sm:7,
+                      xs:0
+                    },
+                    display: "flex",
+                    justifyItems: "right",
+                    flexDirection: "column",
+                    mb:{
+                      xs:3
+                    }
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: "bolder",
+                      fontSize: "30px",
+                      fontFamily: "pangram",
+                    }}
+                  >
+                    Boost revenue
+                  </Typography>
+                  <div className="border"></div>
+                  <p className="text">
+                    Increase revenue by offering secured package delivery as a
+                    premium amenity. Also experience cost savings by eliminating
+                    package management from your operations.{" "}
+                  </p>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                md={6}
+                lg={6}
+                sm={6} 
+                xs={12}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Box sx={{ pr: 5 }}>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: "bolder",
+                      fontSize: "30px",
+                      fontFamily: "pangram",
+                    }}
+                  >
+                    Maximize space
+                  </Typography>
+                  <div className="border"></div>
+                  <p className="text">
+                    Make package lockers and mail rooms a thing of the past.
+                    Turn the extra space into other amenities your residents
+                    will love.{" "}
+                  </p>
+                </Box>
+              </Grid>
+              <Grid item lg={6} md={6} sm={6} xs={12} sx={{  mb:{
+                    xs:7
+                  }}} className="resident"></Grid>
+
+              <Grid item lg={6} md={6} sm={6} xs={12}  className="time">
+                {" "}
+              </Grid>
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={6} 
+                sx={{
+                  display: "flex",
+                  justifyContent: "right",
+                  alignItems: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    pl: {
+                      lg:7,
+                      md:7,
+                      sm:7,
+                      xs:0,
+                    },
+                    display: "flex",
+                    justifyItems: "right",
+                    flexDirection: "column",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: "bolder",
+                      fontSize: "30px",
+                      color: "#000",
+                      fontFamily: "pangram",
+                    }}
+                  >
+                    Save time and effort
+                  </Typography>
+                  <div className="border"></div>
+                  <p className="text">
+                    your onsite team already have a lot to juggle. Package
+                    management should not be of them. Give your team time back
+                    to serve your residents.{" "}
+                  </p>
+                </Box>
+              </Grid>
+            </Grid>
+          </div>
+        </section>
+
+        {/* .............footer............. */}
+        <section className="ready">
+          <div className="container" style={{ textAlign: "center" }}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontFamily: "pangram",
+                fontWeight: "bolder",
+                fontSize: "40px",
+                color: "#000",
+              }}
+            >
+              Ready to step up your amenity game with{" "}
+              <span style={{ color: "#4aefa0" }}>Pigeonne?</span>
+            </Typography>
+            <Button
+              variant="contained"
+              sx={{
+                fontSize: "",
+                fontFamily: "pangram",
+                borderRadius: "0px",
+                mt: 5,
+              }}
+            >
+              Get Started
+            </Button>
+          </div>
+        </section>
+        <div className="footer">
+          <Typography
+            variant="body"
+            sx={{ color: "#f0f0f0", fontFamily: "pangram" }}
+          >
+            All rights are reserved 2022 Pigeonne
+          </Typography>
+        </div>
+      </ThemeProvider>
+  
+    </>
+  );
+};
+
+export default LandingPage;
