@@ -145,7 +145,7 @@ const LandingPage = () => {
                   }}
                 >
                   Your <br />
-                  community favorite amenity is here
+                  community's favorite amenity is here
                 </Typography>
                 <Typography
                   variant="body"
