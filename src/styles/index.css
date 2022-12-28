@@ -139,7 +139,7 @@ align-items: center;
 @media (max-width:600px){
     .heroe{
         height: 600px;
-        background-position-x: -300px;
+        background-position-x: -285px;
     }
     .home_h1::after{
 height: 5%;
