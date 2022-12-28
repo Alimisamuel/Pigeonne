@@ -67,8 +67,8 @@ const Drawers = () => {
                <br/> <a href='mailto:business@pigeonne.app' style={{color:'#000', fontFamily:'pangram', fontSize:'11px',  marginRight:'30px'}}>Email: business@pigeonne.app</a>
               </div>
        
-          <Link
-            to="/donate"
+          <a
+            href="https://pigeonne-dashboard.vercel.app/login"
             style={{
               textDecoration: "none",
               color: "black",
@@ -92,7 +92,7 @@ const Drawers = () => {
                   Login
                 </Button>
        
-          </Link>
+          </a>
         </List>
       </Drawer>
       <IconButton
