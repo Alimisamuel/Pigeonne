@@ -165,9 +165,10 @@ const LandingPage = () => {
                   amenity. Zero cost to you
                 </Typography>
                 <br></br>
+            <a href="https://pigeonne-dashboard.vercel.app/register">
                 <button id="about" className="btn">
                   Get Started
-                </button>
+                </button></a>
               </Grid>
             </Grid>
           </div>
